@@ -8,38 +8,43 @@ inquirer
     {
       type: 'input',
       message: 'What is the title of this project?',
-      name: 'title',
+      name: 'Project Title',
     },
     {
       type: 'input',
       message: 'Please enter a description of the project',
-      name: 'description',
+      name: 'Description',
     },
     {
       type: 'input',
-      message: 'How is the application installed?',
-      name: 'installation',
+      message: 'What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.',
+      name: 'Installation',
     },
     {
      type: 'input', 
-     message: 'How is the application used?',
-     name: 'usage',
+     message: 'Provide Instructions and examples for use. Include screenshots as needed.',
+     name: 'Usage',
     },
+    {
+        type: 'input', 
+        message: 'List your collaborators, if any, with links to their github profiles',
+        name: 'Credits'
+    }
     {
       type: 'list',
       choices: ['MIT', 'Apache License 2.0', 'Mozilla Public License 2.0'],
       message: 'Which license is being used for the application?',
-      name: 'license',
+      name: 'License',
     },
     {
      type:'input',
-     message: 'How to contribute', 
-     name: 'contribution', 
+     message: 'If you created an application or package and would like other developers to contribute, please enter instructions here on how to do so.', 
+     name: 'Contribution', 
     },
     {
      type: 'input', 
      message: 'What is your github username?',
-     name: 'github',
+     name: 'Questions',
     },
     {
      type: 'input',
